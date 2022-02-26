@@ -1,12 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac5b71a3-d6e2-44ba-a182-b8fe2e4a0653" name="Default Changelist" comment="" />
+    <list default="true" id="ac5b71a3-d6e2-44ba-a182-b8fe2e4a0653" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sample/MainActivity1.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/adapter/Duck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/adapter/DuckImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/adapter/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/adapter/Turkey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/adapter/TurkeyAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/adapter/TurkeyImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/chain/Filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/chain/FilterChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/chain/HtmlFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/chain/JSONFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/chain/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/chain/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/chain/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/decorator/Beverage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/decorator/CondimentDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/decorator/Espresso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/decorator/HouseBlend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/decorator/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/decorator/Milk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/decorator/Mocha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/factory/BeijingPizzaFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/factory/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/factory/Pizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/factory/PizzaStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/factory/PizzaStoreImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/factory/StoreFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/factory/SuzhouPizzaFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/proxy/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/proxy/Movable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/proxy/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/proxy/TankLogProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/proxy/TankTimeProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/singleton/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/singleton/SingletonDoubleCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/singleton/SingletonE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/singleton/SingletonHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/singleton/SingletonL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/singleton/SingletonL1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/strategy/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/strategy/CatHeightComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/strategy/CatWeightComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/strategy/Comparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/strategy/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/com/example/lib/designpattern/strategy/Sorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sample/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sample/MainActivity.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_XL_API_30" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -19,10 +80,21 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="242wr75KyEKnFEdkC2awzACvL0s" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -35,7 +107,19 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.example.sample" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.lib.designpattern.chain" />
+      <recent name="com.example.lib.designpattern.proxy" />
+      <recent name="com.example.lib.designpattern.adapter" />
+      <recent name="com.example.lib.designpattern.factory" />
+      <recent name="com.example.lib.designpattern.decorator" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -94,6 +178,66 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.lib.designpattern.proxy.Main" />
+      <module name="lib" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.lib.designpattern.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.lib.designpattern.chain.Main" />
+      <module name="lib" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.lib.designpattern.chain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.lib.Main" />
+      <module name="lib" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.lib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ODDSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.lib.concurrent.ODDSample" />
+      <module name="lib" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.lib.concurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ODDSample" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -107,5 +251,55 @@
       <updated>1642842184696</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="328" y="35" key="#com.intellij.ide.util.MemberChooser" timestamp="1644132025321">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="328" y="35" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1644132025321" />
+    <state width="1228" height="264" key="GridCell.Tab.0.bottom" timestamp="1644648282036">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1228" height="264" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1644648282036" />
+    <state width="1228" height="264" key="GridCell.Tab.0.center" timestamp="1644648282035">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1228" height="264" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1644648282035" />
+    <state width="1228" height="264" key="GridCell.Tab.0.left" timestamp="1644648282035">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1228" height="264" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1644648282035" />
+    <state width="1228" height="264" key="GridCell.Tab.0.right" timestamp="1644648282036">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1228" height="264" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1644648282036" />
+    <state width="1228" height="249" key="GridCell.Tab.1.bottom" timestamp="1644132809395">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1228" height="249" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1644132809395" />
+    <state width="1228" height="249" key="GridCell.Tab.1.center" timestamp="1644132809395">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1228" height="249" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1644132809395" />
+    <state width="1228" height="249" key="GridCell.Tab.1.left" timestamp="1644132809394">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1228" height="249" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1644132809394" />
+    <state width="1228" height="249" key="GridCell.Tab.1.right" timestamp="1644132809395">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1228" height="249" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1644132809395" />
+    <state x="302" y="87" width="675" height="655" key="StructurePopup" timestamp="1643624471174">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="302" y="87" width="675" height="655" key="StructurePopup/0.0.1280.800@0.0.1280.800" timestamp="1643624471174" />
+    <state x="100" y="100" width="1080" height="600" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1644655210845">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="100" y="100" width="1080" height="600" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1280.800@0.0.1280.800" timestamp="1644655210845" />
+    <state x="221" y="0" key="search.everywhere.popup" timestamp="1643790589390">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="221" y="0" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1643790589390" />
   </component>
 </project>
