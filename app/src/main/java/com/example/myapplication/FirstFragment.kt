@@ -36,7 +36,7 @@ class FirstFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
-    private va taskList = Collections.synchronizedList(mutableListOf<Int>().apply {
+    private val taskList = Collections.synchronizedList(mutableListOf<Int>().apply {
         add(5)
         add(5)
         add(3)
