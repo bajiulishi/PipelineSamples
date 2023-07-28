@@ -3,18 +3,19 @@ pipeline {
 
     stages {
         stage('Build') {
-            steps {
-                echo 'Building..'
-            }
+             steps {
+                sh './gradlew clean && rm -rf ./app/build/'
+                sh './gradlew assembleDebug'
+             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
+       stage('UnitTest') {
+             steps {
+                sh './gradlew test'
+             }
         }
-        stage('Deploy') {
+        stage('Archive') {
             steps {
-                echo 'Deploying....'
+                archiveArtifacts artifacts: 'app/build/outputs/**/*.apk', fingerprint: true
             }
         }
     }
