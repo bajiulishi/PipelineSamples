@@ -1,11 +1,21 @@
-node(){
-    stage('first'){
-        echo '这是第一个阶段 '
-    }
-    stage('second'){
-        echo 'zinyan 的脚本式'
-    }
-    stage('last'){
-        echo '这是最后一个阶段 '
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
     }
 }
