@@ -27,6 +27,14 @@ pipeline {
                 }
             }
         }
+        stage("SonarQube Quality") {
+            steps {
+                timeout(time: 1, unit: 'HOURS') {
+                    waitForQualityGate abortPipeline: true,
+                    credentialsId: 'sqa_54b70fa63a511657a2470c134f88f3374f5b0eb2'
+                }
+            }
+        }
         stage('Build') {
              steps {
                 sh './gradlew clean && rm -rf ./app/build/'
