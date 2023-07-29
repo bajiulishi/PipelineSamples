@@ -35,15 +35,15 @@ pipeline {
                 }
             }
         }
+        stage('UnitTest') {
+            steps {
+                sh './gradlew test'
+            }
+        }
         stage('Build') {
              steps {
                 sh './gradlew clean && rm -rf ./app/build/'
                 sh './gradlew assembleDebug'
-             }
-        }
-       stage('UnitTest') {
-             steps {
-                sh './gradlew test'
              }
         }
         stage('Archive') {
