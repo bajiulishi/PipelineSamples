@@ -4,16 +4,11 @@
 # 获取当前提交的 commit msg
 commit_msg=$(cat "$1")
 
-# 获取用户 email
-email=$(git config user.email)
 msg_re="^(feat|fix|docs|style|refactor|perf|test|workflow|build|ci|chore|release|workflow)(\(.+\))?: .{1,100}"
 
-# shellcheck disable=SC2039
 if [[ ! $commit_msg =~ $msg_re ]]; then
-  # shellcheck disable=SC2028
   echo "\n不合法的 commit 消息提交格式，请使用正确的格式：\
-	\nfeat: add comments\
-	\nfix: handle events on blur (close #28)"
+	\nfeat: add comments"
 
   # 异常退出
   exit 1
