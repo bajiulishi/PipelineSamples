@@ -7,6 +7,16 @@ pipeline {
                 sh './gradlew lint'
              }
         }
+        stage('SonarQube') {
+            steps {
+                script {
+                    sonarqubeScannerHome = tool 'SonarQubeScanner'
+                }
+                withSonarQubeEnv('SonarQube') {
+                    sh "${sonarqubeScannerHome}/bin/sonar-scanner"
+                }
+            }
+        }
         stage('Build') {
              steps {
                 sh './gradlew clean && rm -rf ./app/build/'
@@ -17,16 +27,6 @@ pipeline {
              steps {
                 sh './gradlew test'
              }
-        }
-        stage('SonarQube') {
-            steps {
-                script {
-                    sonarqubeScannerHome = tool 'sonarscanner'
-                }
-                withSonarQubeEnv('SonarQube') {
-                    sh "${sonarqubeScannerHome}/bin/sonar-scanner"
-                }
-            }
         }
         stage('Archive') {
             steps {
