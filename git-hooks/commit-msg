@@ -1,20 +1,20 @@
 #!/bin/sh
 
-# see https://github.com/SteFletcher/gradle-commit-check-plugin
+# 用 `` 可以将命令的输出结果赋值给变量
+# 获取当前提交的 commit msg
+commit_msg=$(cat "$1")
 
-commitMessage=`cat $1`
-# pattern see https://gsep.daimler.com/confluence/display/MYCAR/00+Version+Control
-msgPattern='(\[(MYSTAR|MYMAP|MYCAR|CSS|DAIM|SDK|MBUXM|FOA|MYSTORE|BERTHAV2)\-([0-9]+)\]){1}\s((fix|feat|ci|test|refactor|release|revert|build|docs|perf|layout){1}(\([a-zA-Z0-9]+\))?\:)+\s([a-z]{1})(\S{0,71})(([(\r\n)]{2}))?(.*)?'
+# 获取用户 email
+email=$(git config user.email)
+msg_re="^(feat|fix|docs|style|refactor|perf|test|workflow|build|ci|chore|release|workflow)(\(.+\))?: .{1,100}"
 
-a=`echo "$commitMessage" | grep -E $msgPattern`
-if [ $? -eq 0 ]; then
- exit 0
+# shellcheck disable=SC2039
+if [[ ! $commit_msg =~ $msg_re ]]; then
+  # shellcheck disable=SC2028
+  echo "\n不合法的 commit 消息提交格式，请使用正确的格式：\
+	\nfeat: add comments\
+	\nfix: handle events on blur (close #28)"
+
+  # 异常退出
+  exit 1
 fi
-
-RED='\033[0;31m'
-NO_COLOR='\033[0m'
-
-echo "${RED}Commit message does not comply with pattern!${NO_COLOR}\n
-Commit message must be equal to this pattern: [MYSTAR-1234] type(scope?): description (lowercase, max 72 chars)
-Please see https://gsep.daimler.com/confluence/display/MYCAR/Version+Control for reference."
-exit 1
