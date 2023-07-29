@@ -2,6 +2,11 @@ pipeline {
     agent any
 
     stages {
+        stage('lint') {
+             steps {
+                sh './gradlew lint'
+             }
+        }
         stage('Build') {
              steps {
                 sh './gradlew clean && rm -rf ./app/build/'
