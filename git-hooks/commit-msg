@@ -7,6 +7,7 @@ commit_msg=$(cat "$1")
 msg_re="^(feat|fix|docs|style|refactor|perf|test|workflow|build|ci|chore|release|workflow)(\(.+\))?: .{1,100}"
 
 if [[ ! $commit_msg =~ $msg_re ]]; then
+  # shellcheck disable=SC2028
   echo "\n不合法的 commit 消息提交格式，请使用正确的格式：\
 	\nfeat: add comments"
 
