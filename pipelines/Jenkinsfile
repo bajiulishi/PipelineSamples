@@ -19,9 +19,11 @@ pipeline {
              }
         }
         stage('SonarQube') {
-            def sonarqubeScannerHome = tool name: 'SonarQube Scanner'
-            withSonarQubeEnv('SonarQube') {
-                sh "${sonarqubeScannerHome}/bin/sonar-scanner"
+            steps {
+                def sonarqubeScannerHome = tool name: 'SonarQube Scanner'
+                withSonarQubeEnv('SonarQube') {
+                    sh "${sonarqubeScannerHome}/bin/sonar-scanner"
+                }
             }
         }
         stage('Archive') {
