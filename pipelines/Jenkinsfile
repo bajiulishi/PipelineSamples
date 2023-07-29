@@ -13,7 +13,17 @@ pipeline {
                     sonarqubeScannerHome = tool 'SonarQubeScanner'
                 }
                 withSonarQubeEnv('SonarQube') {
-                    sh "${sonarqubeScannerHome}/bin/sonar-scanner"
+                    sh "${sonarqubeScannerHome}/bin/sonar-scanner -X "+
+                    "-Dsonar.host.url=https://2b18-112-20-99-161.ngrok-free.app " +
+                    "-Dsonar.language=java " +
+                    "-Dsonar.projectKey=Samples " +
+                    "-Dsonar.projectName=Samples " +
+                    "-Dsonar.projectVersion=2.0 " +
+                    "-Dsonar.sources=app/src/ " +
+                    "-Dsonar.sourceEncoding=UTF-8 " +
+                    "-Dsonar.java.binaries=target/ " +
+                    "-Dsonar.login=admin " +
+                    "-Dsonar.password=bjls "
                 }
             }
         }
