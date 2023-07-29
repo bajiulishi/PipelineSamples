@@ -18,6 +18,12 @@ pipeline {
                 sh './gradlew test'
              }
         }
+        stage('SonarQube') {
+            def sonarqubeScannerHome = tool name: 'SonarQube Scanner'
+            withSonarQubeEnv('SonarQube') {
+                sh "${sonarqubeScannerHome}/bin/sonar-scanner"
+            }
+        }
         stage('Archive') {
             steps {
                 archiveArtifacts artifacts: 'app/build/outputs/**/*.apk', fingerprint: true
