@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# see https://github.com/SteFletcher/gradle-commit-check-plugin
+
+commitMessage=`cat $1`
+# pattern see https://gsep.daimler.com/confluence/display/MYCAR/00+Version+Control
+msgPattern='(\[(MYSTAR|MYMAP|MYCAR|CSS|DAIM|SDK|MBUXM|FOA|MYSTORE|BERTHAV2)\-([0-9]+)\]){1}\s((fix|feat|ci|test|refactor|release|revert|build|docs|perf|layout){1}(\([a-zA-Z0-9]+\))?\:)+\s([a-z]{1})(\S{0,71})(([(\r\n)]{2}))?(.*)?'
+
+a=`echo "$commitMessage" | grep -E $msgPattern`
+if [ $? -eq 0 ]; then
+ exit 0
+fi
+
+RED='\033[0;31m'
+NO_COLOR='\033[0m'
+
+echo "${RED}Commit message does not comply with pattern!${NO_COLOR}\n
+Commit message must be equal to this pattern: [MYSTAR-1234] type(scope?): description (lowercase, max 72 chars)
+Please see https://gsep.daimler.com/confluence/display/MYCAR/Version+Control for reference."
+exit 1
