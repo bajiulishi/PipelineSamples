@@ -34,7 +34,7 @@ class FirstFragment : Fragment() {
 
     // This property is only valid between onCreateView and
     // onDestroyView.
-    private val binding get() = _binding!!
+    private va binding get() = _binding!!
 
     private val taskList = Collections.synchronizedList(mutableListOf<Int>().apply {
         add(5)
