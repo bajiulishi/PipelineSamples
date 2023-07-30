@@ -2,6 +2,11 @@ pipeline {
     agent any
 
     stages {
+        stage('LoadCode') {
+            steps {
+                git branch: ghprbSourceBranch, credentialsId: 'bjls_id', url: 'https://github.com/bajiulishi/Samples'
+            }
+        }
         stage('Lint') {
              steps {
                 sh './gradlew lint'
