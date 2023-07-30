@@ -1,16 +1,13 @@
 package com.example.myapplication
 
-import android.content.res.ColorStateList
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.content.res.AppCompatResources
-import androidx.core.content.ContextCompat.getColor
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import com.example.myapplication.databinding.FragmentFirstBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.CoroutineStart
@@ -24,9 +21,6 @@ import java.util.Collections
 import java.util.Date
 import java.util.Locale
 
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
 private const val TAG = "FirstFragment"
 class FirstFragment : Fragment() {
 
