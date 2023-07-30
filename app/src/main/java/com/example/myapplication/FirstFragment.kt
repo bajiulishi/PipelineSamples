@@ -24,9 +24,6 @@ import java.util.Collections
 import java.util.Date
 import java.util.Locale
 
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
 private const val TAG = "FirstFragment"
 class FirstFragment : Fragment() {
 
