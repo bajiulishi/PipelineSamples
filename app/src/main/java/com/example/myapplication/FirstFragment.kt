@@ -1,13 +1,16 @@
 package com.example.myapplication
 
+import android.content.res.ColorStateList
 import android.os.Bundle
 import android.util.Log
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.content.res.AppCompatResources
-import androidx.fragment.app.Fragment
+import androidx.core.content.ContextCompat.getColor
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import com.example.myapplication.databinding.FragmentFirstBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.CoroutineStart
@@ -26,9 +29,11 @@ class FirstFragment : Fragment() {
 
     private var _binding: FragmentFirstBinding? = null
 
+    // This property is only valid between onCreateView and
+    // onDestroyView.
     private val binding get() = _binding!!
 
-    private va taskList = Collections.synchronizedList(mutableListOf<Int>().apply {
+    private val taskList = Collections.synchronizedList(mutableListOf<Int>().apply {
         add(5)
         add(5)
         add(3)
